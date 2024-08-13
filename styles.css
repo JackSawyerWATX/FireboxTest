@@ -1,0 +1,16 @@
+/* Remove default list styling */
+ul.horizontal-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Enables Flexbox layout */
+}
+
+ul.horizontal-list li {
+    margin-right: 50px; /* Adds space between items */
+}
+
+/* Optional: Remove margin on the last item */
+ul.horizontal-list li:last-child {
+    margin-right: 0;
+}
