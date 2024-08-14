@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Both Example</title>
+    <style>
+        .float-container {
+            width: 100%;
+            overflow: hidden; /* Ensures container encloses floated elements */
+        }
+        .float-left {
+            float: left;
+            width: 45%;
+            background: lightblue;
+            margin-right: 10px;
+        }
+        .float-right {
+            float: right;
+            width: 45%;
+            background: lightcoral;
+        }
+        .clear-both {
+            clear: both;
+            background: lightgreen;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="float-container">
+        <div class="float-left">Float Left</div>
+        <div class="float-right">Float Right</div>
+    </div>
+    <div class="clear-both">Cleared Content</div>
+</body>
+</html>

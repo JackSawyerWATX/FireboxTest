@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="showButton">Show Div</button>
+    <div id="myDiv">Hello, World!</div>
+
+    <script>
+        $(document).ready(function() {
+            $('#showButton').click(function() {
+                $('#myDiv').fadeIn(); // Show the div with a fade-in effect
+            });
+        });
+    </script>
+</body>
+</html>
